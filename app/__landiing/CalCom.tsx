@@ -1,7 +1,7 @@
 "use client";
 
 import { Section } from "./Section";
-import { CalComEmbed } from "./CalComeEmbed";
+import { CalComEmbed } from "./CalComEmbed";
 
 export const CalCom = () => {
     return (
