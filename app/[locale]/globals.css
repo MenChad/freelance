@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -44,34 +43,47 @@
 }
 
 @layer base {
-  :root {
-    --background: 203 35% 99%;
-    --foreground: 203 63% 5%;
-    --muted: 173 30% 93%;
-    --muted-foreground: 173 7% 37%;
-    --popover: 203 35% 99%;
-    --popover-foreground: 203 63% 5%;
-    --card: 203 35% 99%;
-    --card-foreground: 203 63% 5%;
-    --border: 203 8% 92%;
-    --input: 203 8% 92%;
-    --primary: 203 62% 85%;
-    --primary-foreground: 203 62% 25%;
-    --secondary: 173 62% 85%;
-    --secondary-foreground: 173 62% 5%;
-    --accent: 233 62% 85%;
-    --accent-foreground: 233 62% 25%;
-    --destructive: 17 88% 30%;
-    --destructive-foreground: 17 88% 90%;
-    --ring: 203 62% 85%;
-    --chart-1: 203 62% 85%;
-    --chart-2: 173 62% 85%;
-    --chart-3: 233 62% 85%;
-    --chart-4: 173 62% 88%;
-    --chart-5: 203 65% 85%;
-    --radius: 0.5rem;
+    :root {
+      --background: hsl(98, 35%, 95%);
+      --foreground: hsl(25, 20%, 20%);
+      
+      --muted: hsl(45, 20%, 90%);
+      --muted-foreground: hsl(25, 10%, 40%);
+      
+      --popover: hsl(98, 35%, 95%);
+      --popover-foreground: hsl(25, 20%, 20%);
+      
+      --card: hsl(98, 35%, 95%);
+      --card-foreground: hsl(25, 20%, 20%);
+      
+      --border: hsl(98, 15%, 85%);
+      --input: hsl(98, 15%, 85%);
+      
+      --primary: hsl(125, 35%, 50%);
+      --primary-foreground: hsl(125, 20%, 98%);
+      
+      --secondary: hsl(85, 30%, 85%);
+      --secondary-foreground: hsl(85, 15%, 20%);
+      
+      --accent: hsl(150, 40%, 40%);
+      --accent-foreground: hsl(150, 30%, 95%);
+      
+      --destructive: hsl(5, 75%, 50%);
+      --destructive-foreground: hsl(5, 85%, 95%);
+      
+      --ring: hsl(125, 35%, 50%);
+      
+      --chart-1: hsl(125, 35%, 50%);
+      --chart-2: hsl(85, 30%, 60%);
+      --chart-3: hsl(150, 40%, 40%);
+      --chart-4: hsl(45, 30%, 60%);
+      --chart-5: hsl(5, 70%, 60%);
+      
+      --radius: 0.5rem;
+    }
+    
   }
-}
+
 
 @layer base {
   * {
